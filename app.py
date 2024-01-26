@@ -32,7 +32,7 @@ def get_colours(prompt):
 def index():
     response = openai.Completion.create(
         model="gpt-3.5-turbo-instruct",
-        prompt="what are the coolest, edgiest emoji to use to kill on instagram? Requested format: using html tags forming a list with headings.",
+        prompt="Can you give me a single really good idea to make money?",
         max_tokens=512
     )
     return response["choices"][0]["text"]
